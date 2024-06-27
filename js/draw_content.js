@@ -16,6 +16,7 @@ function update_dash_slow()
     $('#networkpot').html('Network HODL: '+precisionRound(game.networkpot,4)+'<i class="fab fa-ethereum"></i>');
     $('#networkhash').html('Network hash: '+show_big_values_hash(game.networkhash)+' /s');
     $('#networkshare').html('Your Network Share: '+personal_share()+"%");
+    $('#unclaimedICO').html('Your unlcaimed ICO: '+toETH(game.ico_unclaimed)+' <b>BNB</b>');
 
 
     $('#unclaimedpot').html('Your contract balance: '+personal_share_eth(game.unclaimedPot));
